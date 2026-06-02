@@ -1,0 +1,64 @@
+/* ── Design Tokens ───────────────────────────────── */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-text-muted: #666666;
+  --color-accent: #0066ff;
+  --color-border: #e5e5e5;
+
+  --max-width: 800px;
+  --spacing-page: 1.5rem;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f0f0f;
+    --color-text: #eeeeee;
+    --color-text-muted: #888888;
+    --color-accent: #4d94ff;
+    --color-border: #222222;
+  }
+}
+
+/* ── Reset ───────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+/* ── Typography ──────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
