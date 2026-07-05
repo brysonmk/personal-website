@@ -10,7 +10,8 @@ export default function Layout() {
             Bryson Kushner
           </NavLink>
           <ul className={styles.links}>
-            {/* Add nav links here */}
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/projects">Projects</NavLink></li>
           </ul>
         </nav>
       </header>
