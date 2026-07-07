@@ -22,6 +22,11 @@ export default function Layout() {
 
       <footer className={styles.footer}>
         <p>© {new Date().getFullYear()} Bryson Kushner</p>
+        <ul className={styles.socialLinks}>
+          <li><a href="https://github.com/brysonmk" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/brysonkushner" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:brysonkushner@gmail.com">Email</a></li>
+        </ul>
       </footer>
     </div>
   )

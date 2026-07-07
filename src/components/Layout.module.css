@@ -62,8 +62,31 @@
 
 .footer {
   border-top: 1px solid var(--color-border);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
   padding: 2rem var(--spacing-page);
   font-size: 0.85rem;
   color: var(--color-text-muted);
+}
+
+.socialLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socialLinks a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.socialLinks a:hover {
+  color: var(--color-text);
 }
