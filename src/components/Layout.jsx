@@ -12,6 +12,7 @@ export default function Layout() {
           <ul className={styles.links}>
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/projects">Projects</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
             <li>
               <a href="/resume.pdf" target="_blank" rel="noreferrer" className={styles.resumeLink}>
                 Resume
