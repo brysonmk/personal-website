@@ -1,5 +1,11 @@
 import styles from './Home.module.css'
 
+const currently = [
+  { emoji: '💼', text: 'Finishing my Computer Science degree at Carleton University' },
+  { emoji: '🛠️', text: 'Building this website and adding new projects to my portfolio' },
+  { emoji: '📚', text: 'Deepening my TypeScript and React skills' },
+]
+
 export default function Home() {
   return (
     <section className={styles.home}>
@@ -18,6 +24,18 @@ export default function Home() {
         Node.js, Express, and MongoDB on the backend. I care about writing maintainable
         code and shipping things that actually work.
       </p>
+
+      <div className={styles.currently}>
+        <h2>Currently</h2>
+        <ul>
+          {currently.map(({ emoji, text }) => (
+            <li key={text}>
+              <span className={styles.emoji} aria-hidden="true">{emoji}</span>
+              {text}
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }
