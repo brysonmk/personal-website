@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom'
 import styles from './Home.module.css'
+import { featuredProjects } from '@/data/projects'
 
 const currently = [
   { emoji: '💼', text: 'Finishing my Computer Science degree at Carleton University' },
@@ -35,6 +37,22 @@ export default function Home() {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div className={styles.featured}>
+        <div className={styles.featuredHeader}>
+          <h2>Featured Projects</h2>
+          <Link to="/projects" className={styles.seeAll}>See all →</Link>
+        </div>
+        <div className={styles.featuredGrid}>
+          {featuredProjects.map(({ title, description, tech }) => (
+            <Link key={title} to="/projects" className={styles.featuredCard}>
+              <h3>{title}</h3>
+              <p>{description}</p>
+              <span className={styles.featuredTech}>{tech.slice(0, 4).join(' · ')}</span>
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   )
