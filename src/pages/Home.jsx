@@ -27,6 +27,11 @@ export default function Home() {
         code and shipping things that actually work.
       </p>
 
+      <div className={styles.cta}>
+        <Link to="/projects" className={styles.ctaPrimary}>View Projects</Link>
+        <Link to="/contact" className={styles.ctaSecondary}>Get in Touch</Link>
+      </div>
+
       <div className={styles.currently}>
         <h2>Currently</h2>
         <ul>

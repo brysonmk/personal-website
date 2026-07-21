@@ -28,6 +28,42 @@
   line-height: 1.7;
 }
 
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.25rem;
+  transition: opacity 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.ctaPrimary {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.ctaPrimary:hover {
+  opacity: 0.85;
+}
+
+.ctaSecondary {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.ctaSecondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
 .currently {
   margin-top: 3rem;
   max-width: 600px;
