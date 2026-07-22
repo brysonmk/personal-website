@@ -1,4 +1,5 @@
 import styles from './About.module.css'
+import usePageTitle from '@/hooks/usePageTitle'
 
 const skills = [
   { category: 'Languages', items: ['JavaScript', 'TypeScript', 'Python', 'C++', 'SQL'] },
@@ -31,6 +32,7 @@ const experience = [
 ]
 
 export default function About() {
+  usePageTitle('About')
   return (
     <div className={styles.about}>
       <section className={styles.section}>

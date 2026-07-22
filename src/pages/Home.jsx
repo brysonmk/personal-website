@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './Home.module.css'
 import { featuredProjects } from '@/data/projects'
+import usePageTitle from '@/hooks/usePageTitle'
 
 const currently = [
   { emoji: '💼', text: 'Finishing my Computer Science degree at Carleton University' },
@@ -9,6 +10,7 @@ const currently = [
 ]
 
 export default function Home() {
+  usePageTitle()
   return (
     <section className={styles.home}>
       <h1>Hi, I'm <span className={styles.accent}>Bryson Kushner</span></h1>

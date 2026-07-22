@@ -1,4 +1,5 @@
 import styles from './Contact.module.css'
+import usePageTitle from '@/hooks/usePageTitle'
 
 const channels = [
   {
@@ -22,6 +23,7 @@ const channels = [
 ]
 
 export default function Contact() {
+  usePageTitle('Contact')
   return (
     <div className={styles.contact}>
       <h1>Contact</h1>

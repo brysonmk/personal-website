@@ -1,7 +1,9 @@
 import styles from './Projects.module.css'
 import projects from '@/data/projects'
+import usePageTitle from '@/hooks/usePageTitle'
 
 export default function Projects() {
+  usePageTitle('Projects')
   return (
     <div className={styles.projects}>
       <h1>Projects</h1>
