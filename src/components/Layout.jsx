@@ -1,7 +1,8 @@
-import { Outlet, NavLink } from 'react-router-dom'
+import { Outlet, NavLink, useLocation } from 'react-router-dom'
 import styles from './Layout.module.css'
 
 export default function Layout() {
+  const { pathname } = useLocation()
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
@@ -22,7 +23,7 @@ export default function Layout() {
         </nav>
       </header>
 
-      <main className={styles.main}>
+      <main key={pathname} className={styles.main}>
         <Outlet />
       </main>
 
