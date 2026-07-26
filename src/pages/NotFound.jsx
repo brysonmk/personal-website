@@ -7,8 +7,11 @@ export default function NotFound() {
   return (
     <div className={styles.container}>
       <h1>404</h1>
-      <p>Page not found.</p>
-      <Link to="/">Go home</Link>
+      <p className={styles.message}>
+        Looks like this page took a wrong turn — it's not in any of my repos.
+      </p>
+      <p className={styles.subtext}>Let's get you back to something that compiles.</p>
+      <Link to="/" className={styles.homeLink}>← Back home</Link>
     </div>
   )
 }

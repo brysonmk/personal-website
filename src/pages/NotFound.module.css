@@ -11,16 +11,31 @@
 .container h1 {
   font-size: 6rem;
   font-weight: 700;
-  color: var(--color-text-muted);
+  color: var(--color-accent);
   line-height: 1;
 }
 
-.container a {
+.message {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+  max-width: 420px;
+}
+
+.subtext {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+}
+
+.homeLink {
+  margin-top: 0.5rem;
   color: var(--color-accent);
   text-decoration: none;
   font-size: 0.95rem;
+  font-weight: 600;
 }
 
-.container a:hover {
+.homeLink:hover {
   text-decoration: underline;
 }
