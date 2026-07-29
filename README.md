@@ -20,10 +20,11 @@ npm run dev
 
 ```
 src/
-├── components/   # Shared components (Layout, Nav, etc.)
-├── pages/        # Route-level page components
+├── components/   # Shared components (Layout, ScrollToTop)
+├── pages/        # Route-level pages (Home, About, Projects, Contact, NotFound)
+├── hooks/        # Reusable hooks (usePageTitle)
+├── data/         # Static content (projects)
 ├── styles/       # Global CSS and design tokens
-├── assets/       # Images, fonts, static files
 ├── App.jsx       # Route definitions
 └── main.jsx      # App entry point
 ```
