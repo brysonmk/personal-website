@@ -11,6 +11,15 @@
   margin-bottom: 2.5rem;
 }
 
+.orHeading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin: 3rem 0 1.5rem;
+}
+
 .channels {
   list-style: none;
   display: flex;

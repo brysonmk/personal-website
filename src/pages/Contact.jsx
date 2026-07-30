@@ -1,5 +1,6 @@
 import styles from './Contact.module.css'
 import usePageTitle from '@/hooks/usePageTitle'
+import ContactForm from '@/components/ContactForm'
 
 const channels = [
   {
@@ -32,6 +33,9 @@ export default function Contact() {
         just to say hi — I'd love to hear from you.
       </p>
 
+      <ContactForm />
+
+      <h2 className={styles.orHeading}>Or reach me directly</h2>
       <ul className={styles.channels}>
         {channels.map(({ label, value, href, note }) => (
           <li key={label} className={styles.channel}>
