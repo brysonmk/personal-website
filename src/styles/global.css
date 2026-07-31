@@ -13,14 +13,28 @@
   --font-mono: 'JetBrains Mono', monospace;
 }
 
+/* Dark tokens, shared by the explicit toggle and system preference. */
+:root[data-theme='dark'] {
+  --color-bg: #0f0f0f;
+  --color-text: #eeeeee;
+  --color-text-muted: #888888;
+  --color-accent: #4d94ff;
+  --color-border: #222222;
+}
+
+/* Follow the system when no explicit choice has been made. */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme='light']) {
     --color-bg: #0f0f0f;
     --color-text: #eeeeee;
     --color-text-muted: #888888;
     --color-accent: #4d94ff;
     --color-border: #222222;
   }
+}
+
+html {
+  color-scheme: light dark;
 }
 
 /* ── Reset ───────────────────────────────────────── */

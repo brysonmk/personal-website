@@ -1,5 +1,6 @@
 import { Outlet, NavLink, useLocation } from 'react-router-dom'
 import styles from './Layout.module.css'
+import ThemeToggle from './ThemeToggle'
 
 export default function Layout() {
   const { pathname } = useLocation()
@@ -19,6 +20,7 @@ export default function Layout() {
                 Resume
               </a>
             </li>
+            <li><ThemeToggle /></li>
           </ul>
         </nav>
       </header>
