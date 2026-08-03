@@ -20,7 +20,7 @@ export default function Layout() {
                 Resume
               </a>
             </li>
-            <li><ThemeToggle /></li>
+            <li className={styles.themeItem}><ThemeToggle /></li>
           </ul>
         </nav>
       </header>

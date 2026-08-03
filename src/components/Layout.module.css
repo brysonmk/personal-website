@@ -70,6 +70,7 @@
 /* ── Mobile nav ──────────────────────────────────── */
 @media (max-width: 540px) {
   .nav {
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
@@ -88,6 +89,13 @@
 
   .resumeLink {
     padding: 0.25rem 0.6rem;
+  }
+
+  /* Pin the theme toggle to the top-right, aligned with the logo row. */
+  .themeItem {
+    position: absolute;
+    top: 0.85rem;
+    right: var(--spacing-page);
   }
 }
 
